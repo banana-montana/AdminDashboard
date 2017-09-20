@@ -1,0 +1,163 @@
+@import 'vendor/normalize.css';
+@import 'vendor/skeleton.css';
+
+@import 'mixins';
+
+html {
+  background-color: $background;
+}
+
+.container {
+  font-family: 'Raleway', helvetica, sans-serif;
+}
+
+/* Top Nav Menu */
+#top-nav {
+  background-color: $accent-color;
+  height: 50px;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.5pt;
+    &:hover {
+      color: #F5F5F5;
+    }
+  }
+  li {
+    display: inline;
+    font-size: 13pt;
+    padding: 0 10px;
+    float: right;
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+.menu-button {
+  color: white;
+  font-size: 20pt;
+  cursor: pointer;
+  padding: 15px 10px 10px 20px;
+}
+
+.closebtn {
+  font-size: 25pt;
+}
+
+article {
+  text-align: center;
+  margin: 50px;
+  h1 {
+    font-size: 18pt;
+    font-weight: 600;
+    letter-spacing: 0.5pt;
+  }
+  p {
+    font-size: 14pt;
+  }
+}
+
+#data-list {
+  background-color: #F8F8F8;
+  padding: 20px 20px;
+}
+
+.graph {
+  background-color: #F8F8F8;
+  height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.figures-m {
+  background-color: $notification-m;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.figures-s {
+  background-color: $notification-s;
+  width: 30%;
+  height: 100%;
+  float: right;
+  h3 {
+    font-weight: 600;
+    font-size: 25pt;
+    padding-top: 4px;
+  }
+}
+
+.figures-m h3 {
+  font-size: 25pt;
+  padding-top: 8px;
+}
+
+.light-button {
+  padding: 0 20px;
+  background-color: #07beb8;
+  &:hover {
+    background-color: #069c97;
+  }
+}
+
+/* Side Bar */
+
+.sidenav {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $accent-color;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  a {
+    padding: 10px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      color: #DCDCDC;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+/* Toggle Theme switch */
+
+#theme {
+  button {
+    margin-bottom: 16px;
+    border-color: white;
+    border-width: 1px;
+    margin: 10px 20px 5px 30px;
+    &:hover {
+      border-width: 2px;
+    }
+  }
+}
+
+.print-button button {
+  margin: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}

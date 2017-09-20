@@ -1,0 +1,41 @@
+$accent-color: #1DC3BE;
+$notification-s: #F7E060;
+$notification-m: #f9eb99;
+$background: #ffffff;
+$button: #07beb8;
+$button-hover: #069c97;
+
+@import 'base';
+
+.menu-button {
+  color: white;
+}
+
+article {
+  color: black;
+}
+
+#data-list {
+  background-color: #F5F5F5;
+}
+
+.graph {
+  background-color: #F5F5F5;
+}
+
+input .light-button {
+  background-color: #07beb8;
+  &:hover {
+    background-color: #069c97;
+  }
+}
+
+#theme {
+  button {
+	background-color: #07beb8;
+    &:hover {
+      background-color: #07ADA8;
+    }
+  }
+}
+

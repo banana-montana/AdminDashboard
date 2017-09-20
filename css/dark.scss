@@ -1,0 +1,52 @@
+$accent-color: #FF5B87;
+$notification-s: #F7E060;
+$notification-m: #f9eb99;
+$background: #606060;
+$button: #FF5B87;
+$button-hover: #e8537b;
+$font-color: #202020;
+
+@import 'base';
+
+#top-nav {
+  a {
+    color: #202020;
+    &:hover {
+      color: #404040;
+    }
+  }
+}
+
+.menu-button {
+  color: #202020;
+}
+
+article {
+  color: white;
+}
+
+#data-list {
+  background-color: #F0F0F0;
+}
+
+.graph {
+  background-color: #F0F0F0;
+}
+
+.sidenav {
+	a {
+    color: #202020;
+    &:hover {
+      color: #404040;
+    }
+  }
+}
+
+#theme {
+  button {
+  background-color: #FF5B87;
+    &:hover {
+      background-color: #E8537B;
+    }
+  }
+}
